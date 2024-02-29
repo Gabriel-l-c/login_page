@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login page</title>
+    <!-- font awesome cdn link -->
+    <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style type="text/css">
+		img {
+			border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+    <navbar>
+        <div class="logo">
+            <img src="img/virus_logo.png" alt="">
+        </div>
+        <div class="navlist">
+            <div class="myList">
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="signIn">SignIn</a></li>
+                    <!-- <div class="fas fa-bars" id="menu-btn"></div> -->
+                </ul>
+
+                <div class="fas fa-bars" id="menu-btn"></div>
+              
+            </div>
+        </div>  
+
+        <!-- Butoes dos icones como menu e carrinho -->
+        
+    </navbar>
+     
+    <content>
+        <div class="loginForm">
+            <div class="login">
+                <h1>Login</h1>
+
+            </div>
+            <div class="inputForm">
+                <div class="username">
+                    <div class="userForm">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="" id="user" placeholder="Username">
+                    </div>
+
+                </div>
+                <div class="pass">
+                    <div class="passForm">
+                        <i class="fa-solid fa-lock" ></i>
+                        <input type="password" id="pass" placeholder="Password">
+
+                    </div>
+
+                </div>
+                <div class="forgot">
+                    <a href="#" id="forgotText">Esqueceu a senha?</a>
+
+                </div>
+                <button id="loginBtn">Login</button>
+            </div>
+            <div class="footer">
+                <p>Não tem uma conta? Clique <a href="#" id="signUp">SignUp</a> </p>
+
+            </div>
+        </div>
+    </content>
+    <div class="icons">
+        <div class="icon" style ="--clr:  #ff232340">
+            <svg  height="100" width="100" >
+                <circle cx="50" cy="50"  r="45" stroke-width="4" fill="none">
+
+                </circle>
+            </svg>
+            <span>
+                <i class="fa-brands fa-tiktok">
+
+                </i>
+            </span>
+        </div>
+        <div class="icon" style="--clr:  #d92cff40">
+            <svg height="100" width="100">
+                <circle cx="50" cy="50"  r="45" stroke-width="4" fill="none"  /> 
+            </svg>
+            <span>
+                <i class="fa-brands fa-twitter">
+
+                </i>
+            </span>
+        </div>
+        <div class="icon" style="--clr: #8e82ff40 ">
+            <svg height="100" width="100">
+                <circle cx="50" cy="50"  r="45" stroke-width="4" fill="none"  /> 
+            </svg>
+            <span>
+                <i class="fa-brands fa-instagram">
+
+                </i>
+            </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
