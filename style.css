@@ -286,7 +286,7 @@ svg circle{
     }
 
     #menu-btn{
-        display: flex;
+        display: none;
     }
     .list li a{
         overflow: hidden; 
@@ -309,5 +309,12 @@ svg circle{
         max-width:350px;
         /* margin-left: -600px; */
         gap: 20px;
+    }
+}
+
+/* //Only show on 3x density devices */
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ios.loginForm {
+        -webkit-backdrop-filter: blur(10px); /* //Blurs bg behind it */
     }
 }
