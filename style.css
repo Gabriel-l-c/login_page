@@ -3,27 +3,29 @@ body{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 90px 1fr;
-    min-height:650px;
-   /*  min-width: 300px; */
+    height: 750px;
+    min-width: 300px;
     background-image: url(img/montanha.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 navbar{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: grid;
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+    display: flex;
     height:80px;
-    grid-template-rows: 90px;
-    grid-template-columns: 250px 1fr;
-    background-color:rgba(255, 133, 19, 0.651);
-    backdrop-filter: blur(4px);
+   /*  grid-template-rows: 90px;
+    grid-template-columns: 250px 1fr; */
+   /*  background-color:rgba(255, 81, 0, 0.616); */
+    backdrop-filter: blur(3px);
+    box-shadow: 0.01px 0.1px 3px black;
     background-repeat: no-repeat;
     margin-top: -10px;
     margin-right: -10px;
     margin-left: -10px;
+    gap: 70px;
     
 
 }
@@ -34,6 +36,7 @@ navbar{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
 
 
 }
@@ -48,20 +51,23 @@ navbar{
     grid-row: 2/4; */
     padding-top: 70px;
     display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    /* justify-content: flex-end;
+    align-items: center; */
     
 }
 
 .list {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 350px;
-    margin-top: -50px;
+   /*  margin-right: 150px; */
+    margin-top: -40px;
+    gap: 60px;
+    margin-left: 200px;
+    
 }
 .list li{
-    display: inline-flex;
-    margin-right: 50px;
+    display: flex;
+    
+    /* margin-right: 50px; */
     list-style: none;
 }
 .list li a{
@@ -77,12 +83,28 @@ navbar{
     padding-bottom: .5rem;
 
 }
-#signIn{
-    padding: 0px 25px;
-    border-radius: 20px;
-    border-bottom:0;
+.myList li{
+    list-style: none;
+}
+.signIn #signIn{
+    display: flex;
+    list-style: none;
+    
+    margin-left: 160px;
+    margin-top:30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:20px;
+    border-radius:10px;
+    width:70px;
     color: whitesmoke;
-    background-color: rgba(61, 145, 194, 0.767);
+    background-color: rgba(2, 84, 131, 0.507);
+}
+#signIn:hover{
+    /* height: 10px; */
+    margin-top:20px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .fa-bars{
     display:none;
@@ -105,11 +127,11 @@ content{
 }
 .loginForm{
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 310px;
     grid-template-rows: 100px 200px ;
-    border-radius: 20px;
-    border: 2px solid rgb(49,49,49);
-    backdrop-filter:blur(9px);
+    border-radius: 30px;
+    border: 1px solid rgb(49,49,49);
+    backdrop-filter:blur(10px);
     box-shadow: 2px 5px 15px black;
 
 }
@@ -130,7 +152,7 @@ content{
     justify-content: center;
 }
 .userForm, .passForm{
-    border-bottom: 1px solid rgb(72,71,71);
+    border-bottom: 1px solid rgb(0, 0, 0);
     background-color: transparent;
     padding-bottom: 3px;
 
@@ -180,7 +202,7 @@ content{
     justify-content: center;
 }
 #signUp{
-    color: #d92cff;
+    color: #72008b;
 }
 
 .active {
@@ -210,7 +232,7 @@ content{
 }
 
 .icon{
-    backdrop-filter:blur(2px);
+    backdrop-filter:blur(8px);
     box-shadow: 5px 0px 15px rgb(0, 0, 0);
     position: relative;
     width: 100px;
@@ -253,8 +275,16 @@ svg circle{
 
 
 
-@media screen and (max-width: 900px) {
- 
+@media  (max-width: 700px) {
+
+    .body{
+        width: 300px;
+        height: 750px;;
+        display:flex;
+        background-size: auto;
+
+    }
+
     #menu-btn{
         display: flex;
     }
@@ -268,5 +298,16 @@ svg circle{
         transform:scale(1);
 
         /* Other styles for the active state */
+    }
+    content{
+
+        max-width:400px;
+        /* margin-left: -600px; */
+    }
+
+    .icons{
+        max-width:350px;
+        /* margin-left: -600px; */
+        gap: 20px;
     }
 }
